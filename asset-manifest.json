@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/memecreator/static/css/main.2160e5af.css",
+    "main.js": "/memecreator/static/js/main.67cd5db7.js",
+    "index.html": "/memecreator/index.html",
+    "main.2160e5af.css.map": "/memecreator/static/css/main.2160e5af.css.map",
+    "main.67cd5db7.js.map": "/memecreator/static/js/main.67cd5db7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2160e5af.css",
+    "static/js/main.67cd5db7.js"
+  ]
+}
