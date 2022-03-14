@@ -1,0 +1,333 @@
+* {
+  font-family: "Nova Mono", monospace;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+  height: auto;
+  background: hsla(276, 91%, 38%, 1);
+  background: linear-gradient(
+    135deg,
+    #7309b9 0%,
+    hsla(258, 86%, 34%, 1) 33.333333333333336%,
+    hsla(229, 83%, 60%, 1) 66.66666666666667%,
+    hsla(194, 85%, 62%, 1) 100%
+  );
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  color: #f72585;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f72585;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f72585;
+}
+
+.header {
+  font-size: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.selBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100vw;
+  margin: 30px;
+}
+
+.selBtn button,
+.startBtn button {
+  color: #f72585;
+  background-color: transparent;
+  border: 2px solid #f72585;
+  font-size: 30px;
+  border-radius: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.browsePic {
+  border: 2px solid #f72585;
+  border-radius: 10px;
+  margin: 25px;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 20px;
+  width: 95%;
+}
+
+.loadingCon {
+  text-align: center;
+  font-size: 30px;
+}
+
+.memeGrid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.memeItem {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+.memeItem img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.memeItem:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.editingMemeCon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.customizationCon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.modalImg {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* background-color: white; */
+  margin: 10px;
+}
+.memeBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  word-wrap: break-word;
+}
+
+.editor {
+  padding: 10px;
+  width: 300px;
+  height: 380px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+}
+
+.editorForm input {
+  margin: 10px;
+  width: 250px;
+  font-size: 15px;
+  border: 2px solid hsl(276, 91%, 38%);
+  border-radius: 3px;
+  padding-left: 5px;
+  word-wrap: break-word;
+  color: #868383;
+}
+
+.editorForm input:focus {
+  outline-color: #7309b9;
+}
+
+.line {
+  word-wrap: break-word;
+  width: 300px;
+  color: #868383;
+  cursor: move;
+  padding: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stylingBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px;
+  justify-content: space-around;
+}
+
+.stylingBox button {
+  border: none;
+  padding: 0;
+}
+form {
+  margin-bottom: 5px;
+}
+form select {
+  border: 2px solid #7309b9;
+  border-radius: 3px;
+  font-size: 15px !important;
+  color: #868383 !important;
+}
+
+.fontStyles {
+  display: flex;
+  flex-direction: row;
+}
+.fontStyles button {
+  margin-right: 5px;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  text-align: center;
+  padding: 0;
+}
+
+.btnDwnld {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btnDwnld button,
+.uploadImg button {
+  color: #f72585;
+  background-color: transparent;
+  border: 2px solid #f72585;
+  font-size: 20px;
+  border-radius: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.btnDwnld button:hover,
+.selBtn button:hover,
+.startBtn button:hover,
+.uploadImg button:hover {
+  color: rgb(221, 219, 219);
+  border: 2px solid #f72585;
+  background-color: #f72585;
+}
+.pagination button {
+  color: #f72585;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  border-radius: 10px;
+  margin: 5px;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 995px) {
+  .header {
+    font-size: 60px;
+    text-align: center;
+  }
+  .selBtn {
+    flex-direction: column;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+  .selBtn button,
+  .startBtn button {
+    font-size: 20px;
+  }
+  .customizationCon {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .memeItem img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.linetv {
+  position: relative;
+  max-width: 150px;
+  height: auto;
+  margin: 20px 0;
+  background: red;
+  border-radius: 50% / 10%;
+  color: white;
+  text-align: center;
+  text-indent: 0.1em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.linetv:before {
+  /* content: ""; */
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  right: -5%;
+  left: -5%;
+  background: inherit;
+  border-radius: 5% / 50%;
+}
+
+.linesquare {
+  width: 150px;
+  height: 150px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linecircle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lineoval {
+  width: 200px;
+  height: 100px;
+  border-radius: 100px / 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
